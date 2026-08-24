@@ -28,7 +28,6 @@ LOGO=ubuntu-logo
 
 ```text
 Model name: Intel Xeon E312xx (Sandy Bridge, IBRS update)
-BIOS Model name: RHEL-9.6.0 PC (Q35 + ICH9, 2009) CPU @ 2.0GHz
 ```
 
 ## Number of CPU Cores
@@ -60,32 +59,41 @@ tmpfs           5.0M     0     5.0M   0% /run/lock
 ## Mounted File Systems
 
 ```text
-TARGET                 SOURCE   FSTYPE
-/                      /dev/vda1  ext4
-|-/sys                 sysfs      sysfs
+TARGET                 SOURCE   FSTYPE   OPTIONS
+/                      /dev/vda1
+                                ext4     rw,relatime,discard,errors=remount-ro,commit=30
+|-/sys                 sysfs    sysfs    rw,nosuid,nodev,noexec,relatime
 | |-/sys/kernel/security
 | |                    securityfs
-| |-/sys/fs/cgroup     cgroup2
-| |-/sys/fs/pstore     pstore
-| |-/sys/fs/bpf        bpf
-| |-/sys/kernel/debug  debugfs
+| |                             security rw,nosuid,nodev,noexec,relatime
+| |-/sys/fs/cgroup     cgroup2  cgroup2  rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_
+| |-/sys/fs/pstore     pstore   pstore   rw,nosuid,nodev,noexec,relatime
+| |-/sys/fs/bpf        bpf      bpf      rw,nosuid,nodev,noexec,relatime,mode=700
+| |-/sys/kernel/debug  debugfs  debugfs  rw,nosuid,nodev,noexec,relatime
 | |-/sys/kernel/tracing
-| |                    tracefs
-| |-/sys/kernel/config configfs
+| |                    tracefs  tracefs  rw,nosuid,nodev,noexec,relatime
+| |-/sys/kernel/config configfs configfs rw,nosuid,nodev,noexec,relatime
 | `-/sys/fs/fuse/connections
-|                      fusectl
-|-/proc                proc
-|-/dev                 udev
-| |-/dev/pts           devpts
-| |-/dev/shm           tmpfs
+|                      fusectl  fusectl  rw,nosuid,nodev,noexec,relatime
+|-/proc                proc     proc     rw,nosuid,nodev,noexec,relatime
+| `-/proc/sys/fs/binfmt_misc
+|                      systemd-1
+|                               autofs   rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxp
+|   `-/proc/sys/fs/binfmt_misc
+|                      binfmt_misc
+|                               binfmt_m rw,nosuid,nodev,noexec,relatime
+|-/dev                 udev     devtmpfs rw,nosuid,relatime,size=954836k,nr_inodes=238709,m
+| |-/dev/pts           devpts   devpts   rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=
+| |-/dev/shm           tmpfs    tmpfs    rw,nosuid,nodev,inode64
 | |-/dev/hugepages     hugetlbfs
-| `-/dev/mqueue        mqueue
-|-/run                 tmpfs
-| `-/run/lock          tmpfs
+| |                             hugetlbf rw,nosuid,nodev,relatime,pagesize=2M
+| `-/dev/mqueue        mqueue   mqueue   rw,nosuid,nodev,noexec,relatime
+|-/run                 tmpfs    tmpfs    rw,nosuid,nodev,noexec,relatime,size=194892k,mode=
+| `-/run/lock          tmpfs    tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k,inode64
 `-/boot                /dev/vda16
-                         ext4
+                                ext4     rw,relatime
   `-/boot/efi          /dev/vda15
-                         vfat
+                                vfat     rw,relatime,fmask=0077,dmask=0077,codepage=437,ioc
 ```
 
 ## Hostname
