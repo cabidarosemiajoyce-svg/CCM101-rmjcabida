@@ -19,7 +19,7 @@ At the end of this laboratory activity, I should be able to:
 
 ## Cloud Infrastructure Components
 
-| Component            | Example from My KillerCoda Environment             |
+| Component            | What was Found            |
 | -------------------- | -------------------------------------------------- |
 | Compute Resources    | Intel Xeon E312xx CPU, 1 CPU core, and 1.9 GiB RAM |
 | Storage Resources    | 19G disk capacity and mounted file systems         |
