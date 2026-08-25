@@ -35,7 +35,7 @@ At the end of this laboratory activity, I should be able to:
 | GitHub                | Used to store and document the laboratory work             |
 | Markdown              | Used to format the technical documentation                 |
 | Web Browser           | Used to access KillerCoda, GitHub, and cloud documentation |
-| Diagramming Tool      | Used to create the cloud infrastructure diagram            |
+| Draw.io (diagrams.net)| Used to create the cloud infrastructure diagram            |
 
 ## Linux Commands Executed
 
