@@ -94,6 +94,7 @@ TARGET                 SOURCE   FSTYPE   OPTIONS
                          ext4     rw,relatime
   `-/boot/efi          /dev/vda15
                          vfat     rw,relatime,fmask=0077,dmask=0077,codepage=437,ioc
+
 ## Hostname
 
 ```text
