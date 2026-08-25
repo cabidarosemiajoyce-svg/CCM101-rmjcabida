@@ -91,11 +91,9 @@ TARGET                 SOURCE   FSTYPE   OPTIONS
 |-/run                 tmpfs    tmpfs    rw,nosuid,nodev,noexec,relatime,size=194892k,mode=
 | `-/run/lock          tmpfs    tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k,inode64
 `-/boot                /dev/vda16
-                                ext4     rw,relatime
+                         ext4     rw,relatime
   `-/boot/efi          /dev/vda15
-                                vfat     rw,relatime,fmask=0077,dmask=0077,codepage=437,ioc
-```
-
+                         vfat     rw,relatime,fmask=0077,dmask=0077,codepage=437,ioc
 ## Hostname
 
 ```text
