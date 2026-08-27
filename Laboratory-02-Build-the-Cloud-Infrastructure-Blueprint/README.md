@@ -9,8 +9,7 @@ storage, networking, and identity services work together, and document your find
 technical documentation for a client. 
 Using the KillerCoda Playground, Linux tools, official cloud documentation, and your GitHub Cloud Computing 
 Portfolio, you will complete a series of engineering tasks that simulate the planning phase of a cloud deployment. 
-Remember: Great cloud engineers build systems—but exceptional cloud engineers document and justify 
-every design decision. 
+
 . 
 ## Mission Objectives 
 At the end of this laboratory activity, you should be able to: 
