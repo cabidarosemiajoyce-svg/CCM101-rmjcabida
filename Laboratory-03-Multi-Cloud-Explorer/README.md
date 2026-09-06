@@ -1,6 +1,4 @@
-
-
-## Checkpoint 7 – Linux Investigation Using KillerCoda
+## Linux Investigation Using KillerCoda
 
 A Linux environment was investigated using KillerCoda. The investigation focused on identifying the operating system, CPU information, memory, and disk space using basic Linux commands.
 
