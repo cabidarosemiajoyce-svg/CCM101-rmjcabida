@@ -53,5 +53,3 @@ AWS can be used by businesses for many types of workloads. E-commerce companies 
 ## Screenshot
 
 ![AWS Homepage](screenshots/aws-homepage.png)
-
-**Source:** AWS official documentation and website.
