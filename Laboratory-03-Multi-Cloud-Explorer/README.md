@@ -1,4 +1,4 @@
-# Mission 3 – Multi-Cloud Explorer
+
 
 ## Checkpoint 7 – Linux Investigation Using KillerCoda
 
