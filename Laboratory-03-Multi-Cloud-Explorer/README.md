@@ -90,7 +90,3 @@ If this Linux server were migrated to the cloud, it could be hosted using virtua
 | Google Cloud Platform (GCP) | Compute Engine |
 
 These cloud services provide virtual computing environments that can be used to run Linux-based workloads.
-
-## Conclusion
-
-The KillerCoda investigation demonstrated how basic Linux commands can be used to examine a computer environment. The operating system, CPU, memory, and disk information were identified using standard Linux commands. The investigation also showed how a Linux server could be migrated to a cloud environment using virtual machine services from AWS, Microsoft Azure, or Google Cloud Platform.
