@@ -42,7 +42,8 @@ The objectives of this laboratory activity were to:
 ---
 
 ## Skills Learned
-
+```
 Through this laboratory activity, I learned how Block Storage, File Storage, and Object Storage differ in the way they organize and provide access to data. I also learned that choosing the appropriate storage type depends on the requirements and workload of an application. I practiced using Docker to deploy a containerized service and learned how to use Docker options for port mapping, environment variables, container naming, and detached execution. I also learned how to access the MinIO Web Console, create a bucket, and upload an object, which helped me understand the basic workflow of an S3-compatible object storage service. In addition, I gained more experience using the Linux command line through Docker commands such as `docker pull`, `docker run`, and `docker ps`. Finally, I practiced organizing technical information using Markdown and maintaining screenshots as evidence inside a GitHub repository.
+```
 ---
 
