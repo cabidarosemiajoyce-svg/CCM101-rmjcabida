@@ -1,4 +1,4 @@
-# Laboratory 05 – The Cloud Data Engineer
+# Laboratory 05 – Cloud Data Engineer
 
 ## Mission Overview
 
@@ -42,8 +42,8 @@ The objectives of this laboratory activity were to:
 ---
 
 ## Skills Learned
-```
-Through this laboratory activity, I learned how Block Storage, File Storage, and Object Storage differ in the way they organize and provide access to data. I also learned that choosing the appropriate storage type depends on the requirements and workload of an application. I practiced using Docker to deploy a containerized service and learned how to use Docker options for port mapping, environment variables, container naming, and detached execution. I also learned how to access the MinIO Web Console, create a bucket, and upload an object, which helped me understand the basic workflow of an S3-compatible object storage service. In addition, I gained more experience using the Linux command line through Docker commands such as `docker pull`, `docker run`, and `docker ps`. Finally, I practiced organizing technical information using Markdown and maintaining screenshots as evidence inside a GitHub repository.
-```
+
+Through this laboratory activity, I developed a better understanding of the three major cloud storage models: Block Storage, File Storage, and Object Storage, including how they organize data and support different application requirements. I also gained practical experience deploying a containerized service using Docker and learned how port mapping, environment variables, container naming, and detached execution are used when configuring a container. In addition, I learned how to manage an S3-compatible object storage service through the MinIO Web Console by creating a bucket and uploading an object. This activity also improved my confidence in using the Linux command line through Docker commands such as `docker pull`, `docker run`, and `docker ps`. Finally, I strengthened my technical documentation skills by organizing laboratory information in Markdown, maintaining screenshots as deployment evidence, and keeping the project properly structured in GitHub.
+
 ---
 
