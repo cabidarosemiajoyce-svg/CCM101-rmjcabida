@@ -92,8 +92,3 @@ screenshots/minio-bucket-upload.png
 
 The deployment was successfully verified through both the Docker command line and the MinIO Web Console. The running container confirmed that the MinIO service was active, while the successful bucket creation and file upload demonstrated that the object storage environment was operational.
 
-## Technical Reference
-
-* Docker documentation — `docker run` and environment variables
-* MinIO documentation — MinIO object storage and server configuration
-* AWS documentation — Object Storage and Amazon S3 concepts
