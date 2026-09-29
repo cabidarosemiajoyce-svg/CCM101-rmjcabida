@@ -8,72 +8,41 @@ Instead of deploying each container manually, Docker Compose is used to define a
 
 ## Objectives
 
-The objectives of this laboratory activity are to:
+At the end of this laboratory activity, I should be able to:
 
 * Explain the concept of a multi-tier application architecture.
 * Understand the purpose and structure of a `docker-compose.yml` file.
-* Use a Linux command-line text editor to create configuration files.
+* Use the Linux command-line text editor `nano` to create configuration files.
 * Deploy a multi-container application using Docker Compose.
 * Understand Infrastructure as Code (IaC) principles.
-* Document the deployment process using Markdown.
-* Expand the GitHub Cloud Computing portfolio.
+* Document deployment procedures using Markdown.
+* Continue expanding my Cloud Computing GitHub portfolio.
 
 ## Commands Executed
 
-The following commands were used during the deployment:
+The following commands were used during the laboratory activity:
 
 ```bash
 mkdir nextcloud-deployment
 cd nextcloud-deployment
 nano docker-compose.yml
-docker-compose config
 docker-compose up -d
 docker-compose ps
-docker ps
 docker-compose down
 ```
 
-> **Note:** If the newer Docker Compose syntax is available, `docker compose` may be used instead of `docker-compose`.
-
 ## Skills Learned
 
-Through this laboratory activity, I practiced the following skills:
+Through this laboratory activity, I learned and practiced:
 
-* Docker Compose configuration
-* YAML file creation
+* Multi-tier architecture
+* Docker Compose
+* YAML configuration
+* Linux command-line operations
+* Using the `nano` text editor
 * Multi-container deployment
 * Container networking
-* Environment variable configuration
-* Linux command-line operations
-* Markdown documentation
+* Environment variables
 * Infrastructure as Code
+* Markdown documentation
 * GitHub portfolio management
-
-## Deployment Architecture
-
-The Mission 6 application uses a two-tier architecture:
-
-```text
-+----------------------+
-|      Nextcloud       |
-|  Web/Application     |
-|        Tier          |
-+----------+-----------+
-           |
-           | Docker Network
-           |
-+----------v-----------+
-|       MariaDB        |
-|    Database Tier     |
-+----------------------+
-```
-
-## Evidence
-
-The deployment screenshots are stored in the `screenshots/` directory.
-
-The evidence includes:
-
-1. Docker Compose deployment
-2. Nextcloud web interface
-3. Docker Compose teardown
