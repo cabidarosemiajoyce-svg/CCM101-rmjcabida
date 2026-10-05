@@ -10,9 +10,8 @@
 
 Application logs are vital for troubleshooting because they provide a record of requests, errors, and events that occur inside an application. They help engineers identify failed requests and determine the possible cause of application problems.
 
-## Real-Time Container Metrics
+## Container Metrics
 
-The `client-website` container was consuming the following resources at the time of the screenshot:
 
 - **Memory Usage:** 2.742MiB
 - **CPU Percentage:** 0.00%
