@@ -60,11 +60,11 @@ The project was deployed on Ubuntu Server 24.04 LTS using Docker Compose.
 
 Start the containers:
 
-docker compose up -d
+```docker compose up -d```
 
 Check running containers:
 
-docker compose ps
+```docker compose ps```
 
 Access Nextcloud through a web browser:
 
