@@ -24,17 +24,17 @@ This manual provides instructions for starting, accessing, managing, and backing
 4. Open the terminal.
 5. Navigate to the project directory:
 
-cd ~/cloudnova
+```cd ~/cloudnova```
 
 ## Starting Docker Services
 
 Start the Nextcloud and MariaDB containers:
 
-docker compose up -d
+```docker compose up -d```
 
 Check the container status:
 
-docker compose ps
+```docker compose ps```
 
 Make sure the containers are running.
 
@@ -43,8 +43,7 @@ Make sure the containers are running.
 1. Open a web browser.
 2. Enter the following address:
 
-text
-http://localhost:8080
+```http://localhost:8080```
 
 3. Enter your Nextcloud username and password.
 4. Access the Nextcloud dashboard.
@@ -55,22 +54,22 @@ Note: Access through localhost:8080 is for the host computer running the virtual
 
 To stop the services:
 
-docker compose stop
+```docker compose stop```
 
 To restart the services:
 
-docker compose restart
+```docker compose restart```
 
 To view container logs:
 
-docker compose logs
-
+```docker compose logs
+```
 ## Manual Backup
 
 To manually run the backup script:
 
-cd ~/cloudnova
-./backup.sh
+```cd ~/cloudnova
+./backup.sh```
 
 The script creates backups of:
 
@@ -81,12 +80,11 @@ The script creates backups of:
 
 To view generated backup files:
 
-ls -lh ~/cloudnova/backups
+```ls -lh ~/cloudnova/backups```
 
 Backup files are stored in:
-
-text
-/home/ubuntu/cloudnova/backups
+```
+/home/ubuntu/cloudnova/backups```
 
 ## Automated Backup
 
@@ -94,17 +92,17 @@ CloudNova uses Cron to schedule automatic execution of the backup script.
 
 To view the current user's Cron jobs:
 
-crontab -l
+```crontab -l```
 
 To edit scheduled tasks:
 
-crontab -e
+```crontab -e```
 
 ## Security Management
 
 Check the UFW firewall status:
 
-sudo ufw status
+```sudo ufw status```
 
 Review the firewall rules before making changes.
 
