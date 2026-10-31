@@ -62,14 +62,13 @@ To restart the services:
 
 To view container logs:
 
-```docker compose logs
-```
+```docker compose logs```
+
 ## Manual Backup
 
 To manually run the backup script:
 
-```cd ~/cloudnova
-./backup.sh```
+```cd ~/cloudnova./backup.sh```
 
 The script creates backups of:
 
@@ -83,8 +82,7 @@ To view generated backup files:
 ```ls -lh ~/cloudnova/backups```
 
 Backup files are stored in:
-```
-/home/ubuntu/cloudnova/backups```
+```/home/ubuntu/cloudnova/backups```
 
 ## Automated Backup
 
