@@ -1,7 +1,5 @@
 # CloudNova: Enterprise Cloud Architect
 
-### CCM101 – Cloud Computing Final Project
-
 ##  Project Overview
 
 CloudNova is a self-hosted cloud storage system developed using Nextcloud and deployed on Ubuntu Server 24.04 LTS through Docker and Docker Compose.
